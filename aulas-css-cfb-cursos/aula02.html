@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#d1,#d2,#d3{/* configurando as 3 divs */
+    padding: 10px;
+    background-color: lightblue;
+    margin: 15px;
+}
+
+#d1{
+    background-clip: border-box; /* preenche o background todo */
+}
+#d2{
+    background-clip: padding-box; /*não considera o background a partir da margem*/
+}
+#d3{
+    background-clip: content-box; /*vai aplicar o background se tiver o conteudo dentro do elemento */
+}
+
+    </style>
+</head>
+<body>
+
+<div id="d1"></div>
+<div id="d2"></div>
+<div id="d3"></div>
+
+</body>
+</html>
